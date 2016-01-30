@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Geo Mobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">login</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_save">Save</string>
+    <string name="title_activity_splashscreen">splashscreen</string>
+</resources>

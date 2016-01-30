@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/listview"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp">
+
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="Cari Nama Supir"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:layout_above="@+id/listview"
+            android:layout_alignParentStart="true">
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:layout_marginTop="0dp"
+        android:weightSum="1"
+        android:layout_weight="0.87"
+        android:nestedScrollingEnabled="true">
+
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="376dp"
+            android:stackFromBottom="false"
+            android:paddingTop="10dp"
+            android:textFilterEnabled="false"
+            android:headerDividersEnabled="false" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

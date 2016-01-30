@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE">
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:background="#EEEEEE"
+            android:padding="1dp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/thumbnail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/namelabel"
+            android:visibility="visible"
+            android:typeface="normal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/locationname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/locationnamelabel"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationname"
+            android:layout_toRightOf="@+id/latitudelabel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/latitude"
+            android:layout_toRightOf="@+id/longitudelabel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longitude"
+            android:layout_toRightOf="@+id/datelabel" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/arrow"
+        android:src="@drawable/arrow1"
+        android:layout_alignBottom="@+id/thumbnail2"
+        android:layout_toEndOf="@+id/thumbnail2"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="24dp" />
+
+
+</RelativeLayout>

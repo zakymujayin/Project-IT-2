@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Geo Customer</string>
+    <string name="action_settings">Settings</string>
+    <string name="namelabel">"Name : "</string>
+    <string name="locationnamelabel">"Location : "</string>
+    <string name="latitudelabel">"Latitude : "</string>
+    <string name="longitudelabel">"Longitude : "</string>
+    <string name="datelabel">"Tanggal : "</string>
+    <string name="search">Search</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_refresh">Refresh</string>
+</resources>
